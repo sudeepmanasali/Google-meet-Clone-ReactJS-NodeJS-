@@ -1,0 +1,169 @@
+body{
+    background-color: black;
+}
+.header_top_right{
+    position:absolute;
+    top:0;
+    right:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom-left-radius: 10px;
+    background-color: #fff;
+}
+
+
+.bi{
+    color:#5f6368;
+    font-weight: 600;
+}
+.header_item{
+    padding:10px 24px;
+  
+}
+
+.main_footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    height:80px;
+    
+   
+
+}
+
+.meeting_details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:12%;
+    height:100%;
+    padding:0px 10px;
+}
+
+.media_controls{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10%;
+    
+
+}
+
+.media_controls .bi{
+ font-size: large;
+ color:#5f6368;
+ background-color: white;
+
+ padding:16px;
+ border-radius: 50%;
+
+ border:1px solid #dadce0;
+ margin:0 8px;
+ cursor: pointer;
+}
+
+.media_controls .bi:hover{
+    background-color: red;
+    color:white;
+}
+.others{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.options {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin:0px 1px;
+padding:18px 16px;
+height: 100%;
+}
+
+.options:hover{
+    background-color: #dadce0;
+    cursor: pointer;
+}
+
+.meeting_details:hover{
+    background-color: #dadce0;
+    cursor: pointer;
+
+
+
+}
+.bi-telephone-fill:hover{
+    color:white;
+}
+
+.opt_cap{
+    font-size: 14px;
+}
+
+.video_container{
+  
+    margin:5%;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#video-grid{
+    height:100%;
+    
+}
+
+video{
+    height:100%;
+    width:100%;
+}
+
+.bi-telephone-fill:hover{
+   color:white;
+
+}
+
+.act:hover{
+   color:white;
+}
+
+.media_controls .bi:hover{
+    
+   box-shadow: 1px 1px 4px 2px #dadce0;
+}
+@media screen and (max-width:650px){
+    .meeting_details{display:none;}
+
+    .options{
+        /* padding:8px 10px; */
+        height: 100%;
+    }
+
+    .time{display: none;}
+    .media_controls{
+        margin-left: 0;
+    }
+
+    .opt_cap{
+        font-size: 10px;
+    }
+    .dots{
+        display:none;
+    }
+
+    .video_container{
+        margin-top: 100px;
+    }
+}

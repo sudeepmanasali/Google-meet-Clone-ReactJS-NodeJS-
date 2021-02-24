@@ -1,0 +1,155 @@
+.join_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin:15px;
+}
+.join_main_body{
+    margin-top: 4%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left:10%;
+    margin-right:10%;
+
+}
+.join_main_body_left{
+   
+}
+.vdeo_container{
+    position:relative;
+}
+.video-grid{
+    height:300px;
+    width:400px;
+}
+video{
+    width:90%;
+    
+}
+
+.bi{
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+    border:0.5px solid white;
+    color:white;
+    padding:10px;
+    font-size:20px;
+    margin:5px;
+    cursor:pointer;
+
+}
+
+.bi:hover{
+background-color: #dadce0;
+color:black;
+
+}
+.overlay{
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    bottom: 150px;
+    left:32%;
+}
+.join_main_body_right{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.title{
+    font-family: 'Google Sans',Roboto,Arial,sans-serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    
+}
+
+.message{
+    font-family: 'Google Sans',Roboto,Arial,sans-serif;
+    font-size: .875rem;
+    font-weight: 500;
+    
+    margin-top: 5%;
+
+}
+
+.buttons{
+    
+    display: flex;
+    justify-content: space-between;
+   
+    align-items: center;
+    margin-top: 10%;
+}
+
+.button_join{
+    padding: 14px 18px;
+    border-radius: 500px;
+    background-color: #00796b;
+    font-family: 'Google Sans',Roboto,Arial,sans-serif;
+
+    text-transform:capitalize;
+    font-size: 1rem;
+    color:white;
+    border:none;
+    outline:none;
+    font-weight: 500;
+margin-right:10;
+cursor: pointer;
+box-shadow: 1px 1px 4px 3px #dadce0;
+}
+
+.person_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.button_present{
+    padding: 10px 18px;
+    border-radius: 500px;
+    padding-left:0px;
+   color: #00796b;
+    font-family: 'Google Sans',Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+ 
+   
+   box-shadow: 1px 1px 4px 2px #dadce0;
+margin-right:10;
+cursor:pointer;
+}
+
+@media screen and (max-width:650px){
+    .join_header{
+        margin-bottom: 0;
+    }  
+    .join_main_body{
+        
+          flex-direction: column;
+          margin:0px;
+          margin-top: 8%;
+      }
+      video{
+          width: 100%;         
+      }
+
+      .join_main_body_right{
+          margin-top: 10%;
+      }
+
+      .overlay{
+          bottom:240px;
+          left:40%;
+      }
+}

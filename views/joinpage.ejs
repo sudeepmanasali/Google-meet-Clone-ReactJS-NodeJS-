@@ -1,0 +1,60 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+      <link rel="stylesheet" href="joinpage.css">
+
+     <script defer src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="/socket.io/socket.io.js" defer></script>
+
+      <script src="script.js" defer></script>
+      
+    </head>
+    <body>
+        <div class="join_header">
+            <img src="google_meet_logo.png" alt="">
+
+            <div class="header_left">
+                <div class="person_info">
+                  <span>sudeepmanasali@gmail.com</span>
+                  <img src="google_meet_logo.png" style="height:20px;width:20px;border-radius: 505;margin-left:10px;"/>
+                </div>
+                <div class="image">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="join_main_body">
+            <div class="join_main_body_left">
+                <div class="video_container">
+                    <div class="overlay">
+                        <span class='main__mute_button' onclick="muteUnmute()" > <i class="bi bi-mic"></i> </span>
+                        <span class='main__video_button' onclick="playStop()"><i class="bi bi-camera-video"></i></span>
+
+                     </div>  
+                    <div id="video-grid">
+                             
+                    </div> 
+                                     
+                </div>
+                
+
+            </div>
+            <div class="join_main_body_right">
+                <div class="content">
+                    <div class="title">Ready jo join ?</div>
+                    <div class="message">No one else is here</div>
+                    <div class="buttons">
+                       <button class="button_join">join here</button>
+                       <div class="button_present">
+                        <i class="bi bi-file-arrow-up" style="color:#00796b"></i> Present    
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
